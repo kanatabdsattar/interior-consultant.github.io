@@ -54,16 +54,28 @@ main {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 60px;
+  gap: 50px;
   line-height: 20px;
   list-style-type: none;
 }
 .menu li {
     margin: 0;
 }
-.header__nav-item {
+.header__nav-item:nth-child(1) {
   /* float: left;    */
-  line-height: 20px;
+  width: 55px;
+}
+.header__nav-item:nth-child(2) {
+  /* float: left;    */
+  width: 90px;
+}
+.header__nav-item:nth-child(3) {
+  /* float: left;    */
+  width: 50px;
+}
+.header__nav-item:nth-child(4) {
+  /* float: left;    */
+  width: 65px;
 }
 .header__nav-item a {
   text-decoration: none;
@@ -90,6 +102,8 @@ main {
 .header__nav-item a:hover:after { 
   width: 100%; 
   left: 0; 
+}
+.header__nav-item a:hover{
   font-weight: 700;
 }
 .hamburger{
