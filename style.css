@@ -45,6 +45,7 @@ main {
 .header__nav-bar {
   display: flex;
   align-items: center;
+  line-height: 20px;
 }
 .burger-button {
   display: none;
@@ -53,7 +54,8 @@ main {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px;
+  gap: 60px;
+  line-height: 20px;
   list-style-type: none;
 }
 .menu li {
@@ -61,6 +63,7 @@ main {
 }
 .header__nav-item {
   /* float: left;    */
+  line-height: 20px;
 }
 .header__nav-item a {
   text-decoration: none;
@@ -69,12 +72,25 @@ main {
   font-family: Montserrat;
   font-weight: 500;
   transition: .2s ease;
-}
-.header__nav-item a:hover {
-  font-weight: 700;
-  border-bottom: 2px solid white;
+  position: relative;
   padding-bottom: 5px;
-
+}
+.header__nav-item a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.header__nav-item a:hover:after { 
+  width: 100%; 
+  left: 0; 
+  font-weight: 700;
 }
 .hamburger{
     display: none;
