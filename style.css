@@ -200,11 +200,9 @@ main {
 }
 footer{
   margin-top: auto;
-
 }
 .footer__text {
   display: flex;
-  padding-top: 150px;
   height: 60px;
   bottom: 0;
   font-family: Montserrat;
@@ -226,7 +224,7 @@ footer{
   }
   main{
     flex-grow: 1;
-    position: absolute;
+    position: relative;
   }
   .header__nav-bar {
     padding: 0;
@@ -236,7 +234,6 @@ footer{
     z-index: 40;
   }
   .header__nav-item{
-    
     font-size: 36px;
     height: 50px;
     width: 100%;
@@ -295,6 +292,7 @@ footer{
     justify-content: center;
   }
   .menu.active .popup{
+    position: absolute;
     height: 100vh;
     width: 100vw;
     background-color: #181719;
