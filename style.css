@@ -299,6 +299,7 @@ footer{
   .menu.active .popup{
     position: absolute;
     height: 100vh;
+    height: -webkit-fill-available;
     width: 100vw;
     background-color: #181719;
   }
