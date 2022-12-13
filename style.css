@@ -1,12 +1,16 @@
 body {
   background-color: #181719;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: -webkit-fill-available;
 }
 header {
   height: 60px;
 }
 main {
-  height: 100%;
+  height: -webkit-fill-available;
 }
 .wrapper {
   width: 1200px;
@@ -200,6 +204,7 @@ main {
 }
 footer{
   margin-top: auto;
+  height: -webkit-fill-available;
 }
 .footer__text {
   display: flex;
