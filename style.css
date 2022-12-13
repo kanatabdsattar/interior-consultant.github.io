@@ -284,6 +284,7 @@ footer{
     justify-content: center;
     width: 100vw;
     height: 100vh;  
+    min-height: -webkit-fill-available;
     transition: .2s;
     background-color: #181719;
     z-index: 10;
@@ -299,7 +300,7 @@ footer{
   .menu.active .popup{
     position: absolute;
     height: 100vh;
-    height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
     width: 100vw;
     background-color: #181719;
   }
