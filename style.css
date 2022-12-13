@@ -226,6 +226,7 @@ footer{
   }
   main{
     flex-grow: 1;
+    position: absolute;
   }
   .header__nav-bar {
     padding: 0;
